@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SamieZian.In</title>
+  {% load static %}
+  <!-- css here  -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+  <!-- css here  -->
+
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- font awesome  -->
+</head>
+
+<body class="content_scroll">
+
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="/welcome_view"><img src="{% static 'images/Web_Logo.png'%}" class="logo-img"
+        alt="Logo "></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav-link ml-auto">
+        <a href="#"><i class="fas fa-laptop-house navFaIcons"></i></a>
+        <a href="#"><i class="far fa-heart navFaIcons"></i></a>
+        <a href="#"><i class="far fa-bell navFaIcons"></i></a>
+        <a href="#"><i class="fas fa-sms navFaIcons"></i></a>
+      </ul>
+    </div>
+  </nav>
+  <hr>
+  {% block content %}
+
+  {% endblock %}
+
+  <!-- scripts  -->
+  <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
+  <link rel="stylesheet" href="{% static 'js/jquery.js' %}">
+  <link rel="stylesheet" href="{% static 'js/popper.js' %}">
+  <!-- scripts  -->
+</body>
+
+</html>

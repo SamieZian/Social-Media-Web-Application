@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% load static %}
+    {% block content %}
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-3 text-center user-profile shadow" style="background-color: #ADD8E6;">
+                    <img src="{% static 'images/profile-1.jpg'%}" class="bd-placeholder-img rounded-circle text-center" width="120" height="120" alt="xyz">
+                    <h5 class="py-1">Pratik Magade</h5>
+                    <div class="row justify-content-around text-dark">
+                        <div class="col-4 " style="background-color: #27ec8aad;">
+                            <p>Following</p>
+                            <a href="#" class="text-light !impotant"><p>485</p></a>
+                        </div>
+                        <div class="col-4 " style="background-color: #27ec8aad;">
+                            <p>Followers</p>
+                            <a href="#" class="text-light !impotant"><p>102</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="col-lg-7 content_scroll " >
+                        <nav class="navbar shadow navbar-expand-lg d-flex justify-content-between  mb-3 mt-2" style="background-color:white !important;">
+                            <div class="container-fluid">
+                            <a class="navbar-brand" href="/add_post">Add Post</a>
+                            <a class="navbar-brand" href="#">Stories</a>
+                            </div>
+                        </nav>
+                        <div id="all-post">
+                            <div class="card mb-3 post-content shadow mb-3 bg-white rounded" >
+                                <div class="container">
+                                    <div class="row ">
+                                        <img src="{% static 'images/profile-1.jpg'%}" class="rounded-circle " style="margin-left: 7px;margin-top: 3px; margin-bottom: 5px;" alt="..." width="40" height="40">
+                                        <h5 class="card-title" style="margin-top: 9px;margin-left: 7px;">Pratik Magade</h5>
+                                        <i class="fas fa-ellipsis-v ml-auto" style="margin-top: 14px;margin-right: 25px;"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'images/img1.jpg'%}" class="img-fluid mx-2" alt="...">
+                                <div class="container">
+                                    <div class="post_bio" >
+                                        <h7 class="">Bio :</h7>
+                                        <p class="card-text">"Look deep into #nature, and then you wilunderstand  everything better." #_nature_color 🌼Nature🌿Photography 📷 😎18  +gangstar✌✨</p>
+                                    </div>
+                                    <h6 class="card-subtitle text-muted mt-1">See ( 21 Comments).</h6>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Comment Here" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card mb-3 post-content shadow p-3 mb-5 bg-white rounded" >
+                                <div class="container">
+                                    <div class="row ">
+                                        <img src="{% static 'images/profile-1.jpg'%}" class="rounded-circle " style="margin-left: 7px;margin-top: 3px; margin-bottom: 5px;" alt="..." width="40" height="40">
+                                        <h5 class="card-title" style="margin-top: 9px;margin-left: 7px;">Taufik Mulani</h5>
+                                        <i class="fas fa-ellipsis-v ml-auto" style="margin-top: 14px;margin-right: 25px;"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'images/img1.jpg'%}" class="img-fluid mx-2" alt="...">
+                                <div class="container">
+                                    <h5 class="">Taufik Mulani</h5>
+                                    <div class="post_bio" >
+                                        <h7 class="text-muted">Bio :</h7>
+                                        <p class="card-text">"Look deep into #nature, and then you wilunderstand  everything better." #_nature_color 🌼Nature🌿Photography 📷 😎18  +gangstar✌✨</p>
+                                    </div>
+                                    <h6 class="card-subtitle text-muted">Comments</h6>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="col-lg-2">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            
+        </div>
+    </div>
+    {% endblock %}

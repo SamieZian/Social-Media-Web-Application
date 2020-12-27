@@ -1,0 +1,50 @@
+.navbar
+{
+   padding-bottom : 0px!important;
+}
+
+.navFaIcons{
+     font-size: 30px;
+     margin-top: 5px;
+     padding-right: 1rem;
+}
+
+.navbar-brand{
+    margin-top: -10px;
+}
+.logo-img{
+      height: 48px;
+      padding-left: 35px;
+}
+.user-profile
+{
+      padding-top: 18px;
+      padding-bottom: 0px;
+      height: 325px;
+}
+
+.content_scroll
+{
+   height: 510px;
+   overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
